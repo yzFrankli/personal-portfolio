@@ -19,8 +19,81 @@ export default function Page() {
         </section>
           
       <section className="antialiased homepage" id="about">
-        <h1 className="font-bold">About</h1>
-        <p className="w-max-xl">
+        <h2>About</h2>
+        <img className="float-left w-80 pr-4" src={'/img/frank.jpeg'}/>
+        <p className="w-max-xl text-xl">
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
+          I build with language models the way most people build with frameworks — 
+          hands-on, from prompt architecture to production. Currently looking 
+          for internships where I can work on real AI problems. 
           I build with language models the way most people build with frameworks — 
           hands-on, from prompt architecture to production. Currently looking 
           for internships where I can work on real AI problems. 
@@ -35,10 +108,10 @@ export default function Page() {
           for internships where I can work on real AI problems. 
         </p>
       </section>
-
+      <br/>
       {/* Tech */}
       <section id="tech" className="homepage">
-        <h1 className=" font-bold">Tech</h1>
+        <h2>Tech</h2>
         <div className="flex flex-row flex-wrap justify-items-center">
           <TechCard imgPath={"/assets/java.png"} name={"Java"}/>
           <TechCard imgPath={"/assets/c.png"} name={"C"}/>
@@ -58,7 +131,7 @@ export default function Page() {
 
        {/* Coursework */}
       <section id="coursework" className="homepage">
-        <h1 className="font-bold">Course work</h1>
+        <h2>Course work</h2>
         <div className="flex flex-row flex-wrap gap-4 justify-items-center">
           <CourseCard courseName={"programming language and algorithms"}/>
           <CourseCard courseName={"game design"}/>
@@ -75,15 +148,16 @@ export default function Page() {
 
       {/* Portfolio */}
       <section id="portfolio" className="homepage">
-        <h1 className="font-bold">Portfolio</h1>
+        <h2>Portfolio</h2>
         <div className="flex flex-row flex-wrap gap-4 justify-items-center gap-y-4 justify-items-center">
 
         {/* <projCard */}
           <ProjCard imgPath={"/img/medi2.png"} name={"Meditatr"}/>
           <ProjCard imgPath={"/img/taskboard.png"} name={"Taskboard"}/>
-          <ProjCard imgPath={"/img/medi2.png"} name={"Taskboard"}/>
-          <ProjCard imgPath={"/img/medi2.png"} name={"Taskboard"}/>
-          <ProjCard imgPath={"/img/medi2.png"} name={"Taskboard"}/>
+          <ProjCard imgPath={"/img/portfolio.jpeg"} name={"Portfolio"}/>
+          <ProjCard imgPath={"/img/spaceshooters.png"} name={"Space Shooters"}/>
+          <ProjCard imgPath={"/img/jumbocode.png"} name={"Dillar academy (JumboCode)"}/>
+          <ProjCard imgPath={"/img/encryptedim.png"} name={"End-to-end encrypted instant messaging"}/>
 
 
         </div>
@@ -92,7 +166,7 @@ export default function Page() {
 
       {/* Contact */}
       <section id="contact" className="homepage">
-        <h1 className="font-bold">Contact</h1>
+        <h2>Contact</h2>
         <form>
           <label>Name</label><br/>
           <input className="w-xl mb-8"/><br/>
