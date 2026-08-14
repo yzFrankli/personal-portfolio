@@ -5,13 +5,18 @@ export default function Page() {
   return (
     <div>
       {/* Landing */}
-      <section className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto grid grid-col-1 gap-y-20">
-        <h1 className="text-7xl font-bold">
-          Frank 
-          <br></br>
-          Li
-        </h1>
-        <p className="pt-8 w-md">
+    
+        <section className="h-[60vh]">
+          <h1 className="text-7xl font-bold pt-40 antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+            Frank 
+            <br></br>
+            Li
+          </h1>
+        </section>
+          
+      <section className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto" id="about">
+        <h1 className="font-bold">About</h1>
+        <p className="w-md">
           I build with language models the way most people build with frameworks — 
           hands-on, from prompt architecture to production. Currently looking 
           for internships where I can work on real AI problems. 
@@ -28,9 +33,9 @@ export default function Page() {
       </section>
 
       {/* Tech */}
-      <section>
-        <h1 className="max-w-xl mx-4 mt-8 lg:mx-auto font-bold">Tech</h1>
-        <div className="grid grid-cols-5 justify-items-center">
+      <section id="tech" className="max-w-xl mx-4 mt-8 lg:mx-auto">
+        <h1 className=" font-bold">Tech</h1>
+        <div className="grid grid-cols-4 gap-y-4 justify-items-center">
           <div>
             <img className="h-30 w-20 object-contain" src="/assets/java.png"/>
             <p className="text-center">Java</p>
@@ -87,18 +92,39 @@ export default function Page() {
       </section>
 
        {/* Coursework */}
-      <section>
-        <h1 className="max-w-xl mx-4 mt-8 lg:mx-auto font-bold">Course work</h1>
+      <section id="coursework" className="max-w-xl mx-4 mt-8 pt-8 lg:mx-auto">
+        <h1 className="font-bold">Course work</h1>
+        <div className="grid grid-cols-4 gap-y-4 justify-items-center">
+          <div className="border border-black-1">
+            <img src="/assets/flutter.svg"/>
+            <p>Algorithms</p>
+          </div>
+          <div className="border border-black-1">
+            <img src="/assets/flutter.svg"/>
+            <p>Algorithms</p>
+          </div>
+        </div>
+        
       </section>
 
       {/* Portfolio */}
-      <section>
-        <h1 className="max-w-xl mx-4 mt-8 lg:mx-auto font-bold">Portfolio</h1>
+      <section id="portfolio" className="max-w-xl mx-4 mt-8 lg:mx-auto">
+        <h1 className="font-bold">Portfolio</h1>
+        <div className="grid grid-cols-4 gap-y-4 justify-items-center">
+          <p>meditator</p>
+        </div>
       </section>
 
       {/* Contact */}
-      <section>
-        <h1 className="max-w-xl mx-4 mt-8 lg:mx-auto font-bold">Contact</h1>
+      <section id="contact" className="max-w-xl mx-4 mt-8 lg:mx-auto ">
+        <h1 className="font-bold">Contact</h1>
+        <form>
+          <label>Name</label><br/>
+          <input/><br/>
+          <label>Value</label><br/>
+          <input/><br/>
+          <input type="submit" value="submit"></input><br/>
+        </form>
       </section>
     </div>
   )
