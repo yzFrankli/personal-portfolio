@@ -1,5 +1,9 @@
 // import { BlogPosts } from 'app/components/posts'
 import React from 'react';
+import ProjCard from './components/ProjCard';
+import CourseCard from './components/CourseCard'
+import TechCard from './components/TechCard';
+
 
 export default function Page() {
   return (
@@ -14,9 +18,9 @@ export default function Page() {
           </h1>
         </section>
           
-      <section className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto" id="about">
+      <section className="antialiased homepage" id="about">
         <h1 className="font-bold">About</h1>
-        <p className="w-md">
+        <p className="w-max-xl">
           I build with language models the way most people build with frameworks — 
           hands-on, from prompt architecture to production. Currently looking 
           for internships where I can work on real AI problems. 
@@ -33,120 +37,68 @@ export default function Page() {
       </section>
 
       {/* Tech */}
-      <section id="tech" className="max-w-xl mx-4 mt-8 w-screen lg:mx-auto">
+      <section id="tech" className="homepage">
         <h1 className=" font-bold">Tech</h1>
-        <div className="grid grid-cols-5 gap-y-4 justify-items-center">
-          <div>
-            <img className="h-30 w-20 object-contain" src="/assets/java.png"/>
-            <p className="text-center">Java</p>
-          </div>
-          <div>
-            <img className="h-30 w-20 object-contain" src="/assets/c.svg"/>
-            <p className="text-center">C</p>
-          </div>
-          <div>
-            <img className="h-30 w-20 object-contain" src="/assets/c++.png"/>
-            <p className="text-center">c++</p>
-          </div>
-          <div>
-            <img className="h-30 w-20 object-contain" src="/assets/sql.png"/>
-            <p className="text-center">SQL</p>
-          </div>
-          <div>
-            <img className="h-30 w-20 object-contain" src="/assets/python.png"/>
-            <p className="text-center">Python</p>
-          </div>
-          <div>
-            <img className="h-30 w-20 object-contain" src="/assets/react.png"/>
-            <p className="text-center">React</p>
-          </div>
-          <div>
-            <img className="h-30 w-20 object-contain" src="/assets/nodejs.png"/>
-            <p className="text-center">Node.js</p>
-          </div>
-          <div>
-            <img className="h-30 w-20 object-contain" src="/assets/tailwind.png"/>
-            <p className="text-center">Tailwind CSS</p>
-          </div>
-          <div>
-            <img className="h-30 w-20 object-contain" src="/assets/supabase.png"/>
-            <p className="text-center">Supabase</p>
-          </div>
-          <div>
-            <img className="h-30 w-20 object-contain" src="/assets/git.png"/>
-            <p className="text-center">Git</p>
-          </div>
-          <div>
-            <img className="h-30 w-20 object-contain" src="/assets/vercel.png"/>
-            <p className="text-center">Vercel</p>
-          </div>
-          <div>
-            <img className="h-30 w-20 object-contain" src="/assets/flutter.svg"/>
-            <p className="text-center">Flutter</p>
-          </div>
-          <div>
-            <img className="h-30 w-20 object-contain" src="/assets/riverpod.png"/>
-            <p className="text-center">RiverPod</p>
-          </div>
+        <div className="flex flex-row flex-wrap justify-items-center">
+          <TechCard imgPath={"/assets/java.png"} name={"Java"}/>
+          <TechCard imgPath={"/assets/c.png"} name={"C"}/>
+          <TechCard imgPath={"/assets/c++.png"} name={"C++"}/>
+          <TechCard imgPath={"/assets/sql.png"} name={"SQL"}/>
+          <TechCard imgPath={"/assets/python.png"} name={"Python"}/>
+          <TechCard imgPath={"/assets/react.png"} name={"React"}/>
+          <TechCard imgPath={"/assets/nodejs.png"} name={"Node.js"}/>
+          <TechCard imgPath={"/assets/tailwind.png"} name={"Tailwind CSS"}/>
+          <TechCard imgPath={"/assets/supabase.png"} name={"Supabase"}/>
+          <TechCard imgPath={"/assets/git.png"} name={"Git"}/>
+          <TechCard imgPath={"/assets/vercel.png"} name={"Vercel"}/>
+          <TechCard imgPath={"/assets/flutter.svg"} name={"Flutter"}/>
+          <TechCard imgPath={"/assets/riverpod.png"} name={"Riverpod"}/>
         </div>
       </section>
 
        {/* Coursework */}
-      <section id="coursework" className="max-w-xl mx-4 mt-8 pt-8 lg:mx-auto">
+      <section id="coursework" className="homepage">
         <h1 className="font-bold">Course work</h1>
-        <div className="grid grid-cols-4 gap-y-4 justify-items-center">
-          <div className="border border-black-1">
-            <img src="/assets/flutter.svg"/>
-            <p>Algorithms</p>
-          </div>
-          <div className="border border-black-1">
-            <img src="/assets/flutter.svg"/>
-            <p>Algorithms</p>
-          </div>
+        <div className="flex flex-row flex-wrap gap-4 justify-items-center">
+          <CourseCard courseName={"programming language and algorithms"}/>
+          <CourseCard courseName={"game design"}/>
+          <CourseCard courseName={"data structure and analysis"}/>
+          <CourseCard courseName={"data structure and analysis"}/>
+          <CourseCard courseName={"data structure and analysis"}/>
+          <CourseCard courseName={"data structure and analysis"}/>
+          <CourseCard courseName={"data structure and analysis"}/>
+          <CourseCard courseName={"data structure and analysis"}/>
+          <CourseCard courseName={"data structure and analysis"}/>
         </div>
         
       </section>
 
       {/* Portfolio */}
-      <section id="portfolio" className="max-w-xl mx-4 mt-8 lg:mx-auto">
+      <section id="portfolio" className="homepage">
         <h1 className="font-bold">Portfolio</h1>
-        <div className="grid grid-cols-4 gap-y-4 justify-items-center">
-          <div className="border border-black-1">
-            <img src="/assets/flutter.svg"/>
-            <p>Meditatr</p>
-          </div>
+        <div className="flex flex-row flex-wrap gap-4 justify-items-center gap-y-4 justify-items-center">
 
-          <div className="border border-black-1">
-            <img src="/assets/flutter.svg"/>
-            <p>TaskBoard</p>
-          </div>
+        {/* <projCard */}
+          <ProjCard imgPath={"/img/medi2.png"} name={"Meditatr"}/>
+          <ProjCard imgPath={"/img/taskboard.png"} name={"Taskboard"}/>
+          <ProjCard imgPath={"/img/medi2.png"} name={"Taskboard"}/>
+          <ProjCard imgPath={"/img/medi2.png"} name={"Taskboard"}/>
+          <ProjCard imgPath={"/img/medi2.png"} name={"Taskboard"}/>
 
-          <div className="border border-black-1">
-            <img src="/assets/flutter.svg"/>
-            <p>Network Security</p>
-          </div>
 
-          <div className="border border-black-1">
-            <img src="/assets/flutter.svg"/>
-            <p>Network Security</p>
-          </div>
-
-          <div className="border border-black-1">
-            <img src="/assets/flutter.svg"/>
-            <p>Network Security</p>
-          </div>
         </div>
+        
       </section>
 
       {/* Contact */}
-      <section id="contact" className="max-w-xl mx-4 mt-8 lg:mx-auto ">
+      <section id="contact" className="homepage">
         <h1 className="font-bold">Contact</h1>
         <form>
           <label>Name</label><br/>
-          <input/><br/>
+          <input className="w-xl mb-8"/><br/>
           <label>Value</label><br/>
-          <input/><br/>
-          <input type="submit" value="submit"></input><br/>
+          <input className="w-xl mb-4"/><br/>
+          <input type="button" className="border border-black-1 bg-black text-white p-2"value="submit"></input><br/>
         </form>
       </section>
     </div>
