@@ -33,9 +33,9 @@ export default function Page() {
       </section>
 
       {/* Tech */}
-      <section id="tech" className="max-w-xl mx-4 mt-8 lg:mx-auto">
+      <section id="tech" className="max-w-xl mx-4 mt-8 w-screen lg:mx-auto">
         <h1 className=" font-bold">Tech</h1>
-        <div className="grid grid-cols-4 gap-y-4 justify-items-center">
+        <div className="grid grid-cols-5 gap-y-4 justify-items-center">
           <div>
             <img className="h-30 w-20 object-contain" src="/assets/java.png"/>
             <p className="text-center">Java</p>
@@ -111,7 +111,30 @@ export default function Page() {
       <section id="portfolio" className="max-w-xl mx-4 mt-8 lg:mx-auto">
         <h1 className="font-bold">Portfolio</h1>
         <div className="grid grid-cols-4 gap-y-4 justify-items-center">
-          <p>meditator</p>
+          <div className="border border-black-1">
+            <img src="/assets/flutter.svg"/>
+            <p>Meditatr</p>
+          </div>
+
+          <div className="border border-black-1">
+            <img src="/assets/flutter.svg"/>
+            <p>TaskBoard</p>
+          </div>
+
+          <div className="border border-black-1">
+            <img src="/assets/flutter.svg"/>
+            <p>Network Security</p>
+          </div>
+
+          <div className="border border-black-1">
+            <img src="/assets/flutter.svg"/>
+            <p>Network Security</p>
+          </div>
+
+          <div className="border border-black-1">
+            <img src="/assets/flutter.svg"/>
+            <p>Network Security</p>
+          </div>
         </div>
       </section>
 
