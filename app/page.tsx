@@ -30,7 +30,7 @@ export default function Page() {
         <div className="absolute bottom-10 left-10 w-24 h-px bg-black" />
 
         <div className="absolute top-10 right-10 text-sm">
-          SOFTWARE ENGINEER
+          PERSONAL PORTFOLIO
         </div>
       </section>
 

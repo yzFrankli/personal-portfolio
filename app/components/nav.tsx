@@ -14,34 +14,36 @@ const navItems = {
 
 export function Navbar() {
   return (
-    <aside className="-ml-[8px] tracking-tight w-full max-w-[15rem] bg-black ">
-      <div className="lg:sticky top-0 z-50">
-        <nav
-          className=""
-          id="nav"
-        >
-          <div className="p-8 w-30 flex flex-col gap-4 text-white">
-            <a href="#">
-              <h1>home</h1>
-            </a>
-            <a href="#about">
-              <h1>about</h1>
-            </a>
-            <a href="#tech">
-              <h1>tech</h1>
-            </a>
-            <a href="#coursework">
-              <h1>course work</h1>
-            </a>
-            <a href="#portfolio">
-              <h1>portfolio</h1>
-            </a>
-            <a href="#contact">
-              <h1>contact</h1>
-            </a>
-          </div>
-        </nav>
-      </div>
+    <aside className="w-full bg-black text-white lg:min-h-screen lg:w-60 lg:shrink-0 sticky top-0 lg:h-screen z-40">
+      <nav id="nav">
+        <div className="flex flex-row justify-center gap-5 p-4 lg:flex-col lg:items-start lg:gap-4 lg:p-8">
+
+          <a href="#" className="transition-opacity hover:opacity-60">
+            home
+          </a>
+
+          <a href="#about" className="transition-opacity hover:opacity-60">
+            about
+          </a>
+
+          <a href="#tech" className="transition-opacity hover:opacity-60">
+            tech
+          </a>
+
+          <a href="#coursework" className="transition-opacity hover:opacity-60">
+            course work
+          </a>
+
+          <a href="#portfolio" className="transition-opacity hover:opacity-60">
+            portfolio
+          </a>
+
+          <a href="#contact" className="transition-opacity hover:opacity-60">
+            contact
+          </a>
+
+        </div>
+      </nav>
     </aside>
   )
 }

@@ -47,23 +47,23 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        // 'text-black bg-white dark:text-white dark:bg-black',
+        'scroll-smooth',
         GeistSans.variable,
         GeistMono.variable
       )}
     >
       <body>
-        <main className="flex min-h-screen h-full">
+        <main className="flex min-h-screen flex-col lg:flex-row">
           <Navbar />
 
           <div className="flex min-w-0 flex-1 flex-col">
             <div className="flex-1">
               {children}
             </div>
-            
+
             <Footer />
           </div>
-          
+
           <Analytics />
           <SpeedInsights />
         </main>
