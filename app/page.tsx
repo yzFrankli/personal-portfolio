@@ -9,149 +9,141 @@ export default function Page() {
   return (
     <div>
       {/* Landing */}
-      <section className="h-svh flex items-center justify-center relative overflow-hidden">
-        <div className="flex flex-col items-center">
-          <h1 className="text-7xl md:text-9xl font-bold homepage leading-none z-10">
+      <section className="h-svh flex items-center justify-center relative overflow-hidden px-6">
+        <div className="flex flex-col items-center gap-6">
+          <h1 className="text-7xl md:text-9xl font-bold leading-none z-10 text-center">
           Frank
           <br />
           Li
           </h1>
-          <a className="border border-black rounded-xl p-2 px-4 mt-40" href={"#about"}>more</a>
+          <a className="border border-black rounded-xl px-4 py-2 mt-8 md:mt-12" href={"#about"}>more</a>
         </div>
-        
 
-        {/* Decorative elements */}
-        {/* <div className="absolute top-10 left-10 w-32 h-32 border border-black rounded-full" /> */}
+        <div className="absolute bottom-8 left-6 md:bottom-10 md:left-10 w-24 h-px bg-black" />
 
-        {/* <div className="absolute bottom-16 right-10 text-sm tracking-[0.4em] rotate-90">
-          PORTFOLIO — 2026
-        </div> */}
-
-        <div className="absolute bottom-10 left-10 w-24 h-px bg-black" />
-
-        <div className="absolute top-10 right-10 text-sm">
+        <div className="absolute top-8 right-6 md:top-10 md:right-10 text-sm tracking-wide">
           PERSONAL PORTFOLIO
         </div>
       </section>
 
-      <section className="antialiased homepage" id="about">
-        <h2>About</h2>
-        <img className="float-left w-80 pr-4" src={'/img/frank.jpeg'} />
-        <p className="w-max-xl text-xl">
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems
-        </p>
-      </section>
-      <br />
-      {/* Tech */}
-      <section id="tech" className="homepage">
-        <h2>Tech</h2>
-        <div className="flex flex-row flex-wrap justify-items-center">
-          <TechCard imgPath={"/assets/java.png"} name={"Java"} />
-          <TechCard imgPath={"/assets/c.png"} name={"C"} />
-          <TechCard imgPath={"/assets/c++.png"} name={"C++"} />
-          <TechCard imgPath={"/assets/sql.png"} name={"SQL"} />
-          <TechCard imgPath={"/assets/python.png"} name={"Python"} />
-          <TechCard imgPath={"/assets/react.png"} name={"React"} />
-          <TechCard imgPath={"/assets/nodejs.png"} name={"Node.js"} />
-          <TechCard imgPath={"/assets/tailwind.png"} name={"Tailwind CSS"} />
-          <TechCard imgPath={"/assets/supabase.png"} name={"Supabase"} />
-          <TechCard imgPath={"/assets/git.png"} name={"Git"} />
-          <TechCard imgPath={"/assets/vercel.png"} name={"Vercel"} />
-          <TechCard imgPath={"/assets/flutter.svg"} name={"Flutter"} />
-          <TechCard imgPath={"/assets/riverpod.png"} name={"Riverpod"} />
-        </div>
-      </section>
-
-      {/* Coursework */}
-      <section id="coursework" className="homepage">
-        <h2>Course work</h2>
-        <div className="flex flex-row flex-wrap gap-4 justify-items-center">
-          <CourseCard courseName={"programming language and algorithms"} />
-          <CourseCard courseName={"game design"} />
-          <CourseCard courseName={"data structure and analysis"} />
-          <CourseCard courseName={"data structure and analysis"} />
-          <CourseCard courseName={"data structure and analysis"} />
-          <CourseCard courseName={"data structure and analysis"} />
-          <CourseCard courseName={"data structure and analysis"} />
-          <CourseCard courseName={"data structure and analysis"} />
-          <CourseCard courseName={"data structure and analysis"} />
-        </div>
-
-      </section>
-
-      {/* Portfolio */}
-      <section id="portfolio" className="homepage">
-        <h2>Portfolio</h2>
-        <div className="flex flex-row flex-wrap gap-4 justify-items-center gap-y-4 justify-items-center">
-
-          {/* <projCard */}
-          <ProjCard imgPath={"/img/medi2.png"} name={"Meditatr"} tech={["react", "vercel"]} gitUrl={"https://github.com/yzFrankli/taskboard"}/>
-          <ProjCard imgPath={"/img/taskboard.png"} name={"Taskboard"} tech={["react", "vercel"]} gitUrl={"https://github.com/yzFrankli/taskboard"}/>
-          <ProjCard imgPath={"/img/portfolio.jpeg"} name={"Portfolio"} tech={["react", "vercel"]} gitUrl={"https://github.com/yzFrankli/taskboard"}/>
-          <ProjCard imgPath={"/img/spaceshooters.png"} name={"Space Shooters"} tech={["react", "vercel"]} gitUrl={"https://github.com/yzFrankli/taskboard"}/>
-          <ProjCard imgPath={"/img/jumbocode.png"} name={"Dillar academy (JumboCode)"} tech={["react", "vercel"]} gitUrl={"https://github.com/yzFrankli/taskboard"}/>
-          <ProjCard imgPath={"/img/encryptedim.png"} name={"End-to-end encrypted instant messaging"} tech={["react", "vercel"]} gitUrl={"https://github.com/yzFrankli/taskboard"}/>
-
-
-        </div>
-
-      </section>
-
-      {/* Contact */}
-      <section id="contact" className="homepage">
-        <div className="flex flex-row gap-8 flex-wrap">
-          <div className="w-lg">
-            <h2 className="">Send a message</h2>
-            <p className="text-xl text-red-800">Want to send me a message? Fill out the following form to quickly and easily send me a message directly in browser.</p>
+      <div className="site-content">
+        <section className="antialiased" id="about">
+          <h2 className="section-heading">About</h2>
+          <div className="flex flex-col md:flex-row gap-8 lg:gap-12 items-start">
+            <img className="w-full max-w-xs md:max-w-sm shrink-0" src={'/img/frank.jpeg'} alt="Frank Li" />
+            <p className="text-lg md:text-xl leading-relaxed text-neutral-800">
+              I build with language models the way most people build with frameworks —
+              hands-on, from prompt architecture to production. Currently looking
+              for internships where I can work on real AI problems.
+              I build with language models the way most people build with frameworks —
+              hands-on, from prompt architecture to production. Currently looking
+              for internships where I can work on real AI problems.
+              I build with language models the way most people build with frameworks —
+              hands-on, from prompt architecture to production. Currently looking
+              for internships where I can work on real AI problems.
+              I build with language models the way most people build with frameworks —
+              hands-on, from prompt architecture to production. Currently looking
+              for internships where I can work on real AI problems.
+              I build with language models the way most people build with frameworks —
+              hands-on, from prompt architecture to production. Currently looking
+              for internships where I can work on real AI problems.
+              I build with language models the way most people build with frameworks —
+              hands-on, from prompt architecture to production. Currently looking
+              for internships where I can work on real AI problems.
+              I build with language models the way most people build with frameworks —
+              hands-on, from prompt architecture to production. Currently looking
+              for internships where I can work on real AI problems.
+              I build with language models the way most people build with frameworks —
+              hands-on, from prompt architecture to production. Currently looking
+              for internships where I can work on real AI problems.
+              I build with language models the way most people build with frameworks —
+              hands-on, from prompt architecture to production. Currently looking
+              for internships where I can work on real AI problems.
+              I build with language models the way most people build with frameworks —
+              hands-on, from prompt architecture to production. Currently looking
+              for internships where I can work on real AI problems.
+            </p>
           </div>
+        </section>
 
-          <form
-            action="https://formspree.io/f/xljrlkkn"
-            method="POST"
-            className="border border-black-1 bg-red-300 rounded-xl mr-10 p-8"
-          >
-            <label>Name</label><br />
-            <input type="text" name="text" className="w-xl mb-8" required /><br />
+        <section id="tech">
+          <h2 className="section-heading">Tech</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-2 gap-y-6 md:gap-x-4 md:gap-y-8">
+            <TechCard imgPath={"/assets/java.png"} name={"Java"} />
+            <TechCard imgPath={"/assets/c.png"} name={"C"} />
+            <TechCard imgPath={"/assets/c++.png"} name={"C++"} />
+            <TechCard imgPath={"/assets/sql.png"} name={"SQL"} />
+            <TechCard imgPath={"/assets/python.png"} name={"Python"} />
+            <TechCard imgPath={"/assets/react.png"} name={"React"} />
+            <TechCard imgPath={"/assets/nodejs.png"} name={"Node.js"} />
+            <TechCard imgPath={"/assets/tailwind.png"} name={"Tailwind CSS"} />
+            <TechCard imgPath={"/assets/supabase.png"} name={"Supabase"} />
+            <TechCard imgPath={"/assets/git.png"} name={"Git"} />
+            <TechCard imgPath={"/assets/vercel.png"} name={"Vercel"} />
+            <TechCard imgPath={"/assets/flutter.svg"} name={"Flutter"} />
+            <TechCard imgPath={"/assets/riverpod.png"} name={"Riverpod"} />
+          </div>
+        </section>
 
-            <label>Email</label><br />
-            <input type="email" className="w-xl mb-8" required /><br />
+        <section id="coursework">
+          <h2 className="section-heading">Course work</h2>
+          <div className="flex flex-row flex-wrap gap-3">
+            <CourseCard courseName={"programming language and algorithms"} />
+            <CourseCard courseName={"game design"} />
+            <CourseCard courseName={"data structure and analysis"} />
+            <CourseCard courseName={"data structure and analysis"} />
+            <CourseCard courseName={"data structure and analysis"} />
+            <CourseCard courseName={"data structure and analysis"} />
+            <CourseCard courseName={"data structure and analysis"} />
+            <CourseCard courseName={"data structure and analysis"} />
+            <CourseCard courseName={"data structure and analysis"} />
+          </div>
+        </section>
 
-            <label>Message</label><br />
-            <textarea name="message" className="w-xl mb-4" required /><br />
-            <button type="submit" className="border border-black-1 bg-black text-white p-2 rounded-xl" value="Submit" >Submit</button><br />
-          </form>
-        </div>
+        <section id="portfolio">
+          <h2 className="section-heading">Portfolio</h2>
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-10 gap-y-12 justify-items-center xl:justify-items-start">
+            <ProjCard imgPath={"/img/medi2.png"} name={"Meditatr"} tech={["react", "vercel"]} gitUrl={"https://github.com/yzFrankli/taskboard"}/>
+            <ProjCard imgPath={"/img/taskboard.png"} name={"Taskboard"} tech={["react", "vercel"]} gitUrl={"https://github.com/yzFrankli/taskboard"}/>
+            <ProjCard imgPath={"/img/portfolio.jpeg"} name={"Portfolio"} tech={["react", "vercel"]} gitUrl={"https://github.com/yzFrankli/taskboard"}/>
+            <ProjCard imgPath={"/img/spaceshooters.png"} name={"Space Shooters"} tech={["react", "vercel"]} gitUrl={"https://github.com/yzFrankli/taskboard"}/>
+            <ProjCard imgPath={"/img/jumbocode.png"} name={"Dillar academy (JumboCode)"} tech={["react", "vercel"]} gitUrl={"https://github.com/yzFrankli/taskboard"}/>
+            <ProjCard imgPath={"/img/encryptedim.png"} name={"End-to-end encrypted instant messaging"} tech={["react", "vercel"]} gitUrl={"https://github.com/yzFrankli/taskboard"}/>
+          </div>
+        </section>
 
-      </section>
+        <section id="contact">
+          <div className="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-16">
+            <div className="flex-1 max-w-md space-y-4">
+              <h2 className="section-heading !mb-0">Send a message</h2>
+              <p className="text-lg md:text-xl text-red-800 leading-relaxed">Want to send me a message? Fill out the following form to quickly and easily send me a message directly in browser.</p>
+            </div>
+
+            <form
+              action="https://formspree.io/f/xljrlkkn"
+              method="POST"
+              className="flex-1 border border-black-1 bg-red-300 rounded-xl p-6 md:p-8 space-y-5 w-full max-w-xl"
+            >
+              <div className="space-y-2">
+                <label>Name</label>
+                <input type="text" name="text" className="w-full" required />
+              </div>
+
+              <div className="space-y-2">
+                <label>Email</label>
+                <input type="email" className="w-full" required />
+              </div>
+
+              <div className="space-y-2">
+                <label>Message</label>
+                <textarea name="message" className="w-full min-h-32" required />
+              </div>
+
+              <button type="submit" className="border border-black-1 bg-black text-white px-4 py-2 rounded-xl mt-2" value="Submit">Submit</button>
+            </form>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }
