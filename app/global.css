@@ -181,5 +181,72 @@ table {
 h2 {
   font-size: x-large;
   font-weight: 800;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
+
+.flip-container {
+  perspective: 1000px;
+  /* width: 300px; */
+  /* height: 200px; */
+  width: 548px;
+  height:250px;
+  border: black;
+  border-style: solid;
+  /* margin-top: 5px; */
+  border-radius: 12px;
+  border-width: 0px;
+  object-fit: cover;
+}
+
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Flip when hovering the entire container */
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.back {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+}
+
+.project-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
