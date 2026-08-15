@@ -4,11 +4,12 @@ interface projItems {
   imgPath: string;
   name: string;
   tech: Array<string>;
-  gitUrl: string
+  links: Array<string>
+  icons: Record<string, string> // Record<link, icon-link>
 
 }
 
-export default function ProjCard({ imgPath, name, tech, gitUrl }: projItems) {
+export default function ProjCard({ imgPath, name, tech, links, icons }: projItems) {
   return (
 
     <div className="project h-auto rounded-xl flex flex-col">
@@ -25,17 +26,20 @@ export default function ProjCard({ imgPath, name, tech, gitUrl }: projItems) {
 
           <div className="back bg-gray-500 relative justify-center">
             <div className="project-icons absolute">
-              <a
-                href={gitUrl}
+              {Object.entries(links).map(([key, value], index) => (
+                <a
+                key={index}
+                href={value}
                 target="_blank"
                 rel="noopener noreferrer"
-              >
+                >
                 <img
-                  src="/assets/github.png"
+                  src={icons[value]}
                   className="icon"
                   alt="GitHub"
                 />
-              </a>
+                </a>
+              ))}
 
               {/* <a
                 href="https://your-project.com"
