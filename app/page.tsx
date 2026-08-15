@@ -31,7 +31,8 @@ export default function Page() {
           PERSONAL PORTFOLIO
         </div>
       </section>
-
+      
+      {/* about */}
       <div className="site-content">
         <section className="antialiased" id="about">
           <h2 className="section-heading">About</h2>
@@ -72,6 +73,7 @@ export default function Page() {
           </div>
         </section>
 
+        {/* techstack */}
         <section id="tech">
           <h2 className="section-heading">Tech</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-2 gap-y-6 md:gap-x-4 md:gap-y-8">
@@ -92,7 +94,7 @@ export default function Page() {
         </section>
 
         
-
+        {/* coursework */}
         <section id="coursework">
           <h2 className="section-heading">Course work</h2>
           <div className="flex flex-row flex-wrap gap-3">
@@ -108,9 +110,10 @@ export default function Page() {
           </div>
         </section>
 
+        {/* Portfolio */}
         <section id="portfolio">
           <h2 className="section-heading">Portfolio</h2>
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-10 gap-y-12 justify-items-center xl:justify-items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-x-5 gap-y-12 justify-items-center xl:justify-items-start">
             <ProjCard 
               imgPath={"/img/medi2.png"} 
               name={"Meditatr"} 
@@ -191,7 +194,8 @@ export default function Page() {
               icons={{"https://www.figma.com/proto/TBHHhR0F6687q6bG904JFP/Disability-Map?node-id=68-396&t=ZpVM9us4dsBgKI0r-1&starting-point-node-id=68%3A396": figmaImg}}/>
           </div>
         </section>
-
+        
+        {/* contact */}
         <section id="contact">
           <div className="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-16">
             <div className="flex-1 max-w-md space-y-4">
