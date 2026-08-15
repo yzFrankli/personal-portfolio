@@ -40,7 +40,7 @@ export function Navbar() {
       }`}
     >
       <nav id="nav" className="h-full">
-        <div className="flex flex-row justify-center gap-5 p-4 lg:h-full lg:flex-col lg:items-start lg:gap-4 lg:p-4">
+        <div className="flex flex-row justify-start gap-5 p-4 lg:h-full lg:flex-col lg:items-start lg:gap-4 lg:p-4">
           <button
             type="button"
             onClick={toggleCollapsed}
