@@ -9,13 +9,29 @@ export default function Page() {
   return (
     <div>
       {/* Landing */}
-
-      <section className="h-[60vh]">
-        <h1 className="text-7xl font-bold pt-40 antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+      <section className="h-svh flex items-center justify-center relative overflow-hidden">
+        <div className="flex flex-col items-center">
+          <h1 className="text-7xl md:text-9xl font-bold homepage leading-none z-10">
           Frank
-          <br></br>
+          <br />
           Li
-        </h1>
+          </h1>
+          <a className="border border-black rounded-xl p-2 px-4 mt-40" href={"#about"}>more</a>
+        </div>
+        
+
+        {/* Decorative elements */}
+        {/* <div className="absolute top-10 left-10 w-32 h-32 border border-black rounded-full" /> */}
+
+        {/* <div className="absolute bottom-16 right-10 text-sm tracking-[0.4em] rotate-90">
+          PORTFOLIO — 2026
+        </div> */}
+
+        <div className="absolute bottom-10 left-10 w-24 h-px bg-black" />
+
+        <div className="absolute top-10 right-10 text-sm">
+          SOFTWARE ENGINEER
+        </div>
       </section>
 
       <section className="antialiased homepage" id="about">
@@ -51,61 +67,7 @@ export default function Page() {
           for internships where I can work on real AI problems.
           I build with language models the way most people build with frameworks —
           hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
-          I build with language models the way most people build with frameworks —
-          hands-on, from prompt architecture to production. Currently looking
-          for internships where I can work on real AI problems.
+          for internships where I can work on real AI problems
         </p>
       </section>
       <br />

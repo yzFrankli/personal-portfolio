@@ -1,9 +1,17 @@
 import CourseCard from './CourseCard'
 
-export default function ProjCard({ imgPath, name, tech, gitUrl }: { imgPath: string, name: string, tech: Array<string>, gitUrl: string}) {
+interface projItems { 
+  imgPath: string;
+  name: string;
+  tech: Array<string>;
+  gitUrl: string
+
+}
+
+export default function ProjCard({ imgPath, name, tech, gitUrl }: projItems) {
   return (
 
-    <div className="project h-auto rounded-xl border hover:border-red-50">
+    <div className="project h-auto rounded-xl">
       <div className="flip-container">
         <div className="flipper">
 
@@ -15,7 +23,7 @@ export default function ProjCard({ imgPath, name, tech, gitUrl }: { imgPath: str
             />
           </div>
 
-          <div className="back bg-gray-100 relative justify-center">
+          <div className="back bg-gray-500 relative justify-center">
             <div className="project-icons absolute">
               <a
                 href={gitUrl}
