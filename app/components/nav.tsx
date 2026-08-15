@@ -19,27 +19,27 @@ export function Navbar() {
         <div className="flex flex-row justify-center gap-5 p-4 lg:flex-col lg:items-start lg:gap-4 lg:p-8">
 
           <a href="#" className="transition-opacity hover:opacity-60">
-            home
+            Home
           </a>
 
           <a href="#about" className="transition-opacity hover:opacity-60">
-            about
+            About
           </a>
 
           <a href="#tech" className="transition-opacity hover:opacity-60">
-            tech
+            Tech Stack
           </a>
 
           <a href="#coursework" className="transition-opacity hover:opacity-60">
-            course work
+            Course Work
           </a>
 
           <a href="#portfolio" className="transition-opacity hover:opacity-60">
-            portfolio
+            Portfolio
           </a>
 
           <a href="#contact" className="transition-opacity hover:opacity-60">
-            contact
+            Contact
           </a>
 
         </div>
