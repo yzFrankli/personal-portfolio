@@ -6,10 +6,11 @@ interface projItems {
   tech: Array<string>;
   links: Array<string>
   icons: Record<string, string> // Record<link, icon-link>
+  descr: string;
 
 }
 
-export default function ProjCard({ imgPath, name, tech, links, icons }: projItems) {
+export default function ProjCard({ imgPath, name, tech, links, icons, descr }: projItems) {
   return (
 
     <div className="project h-auto rounded-xl flex flex-col">
@@ -68,11 +69,7 @@ export default function ProjCard({ imgPath, name, tech, links, icons }: projItem
           ))}
         </div>
         <p className="leading-relaxed">
-          some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
-          some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
-          some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
-          some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
-          some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
+          {descr}
           </p>
       </div>
     </div>

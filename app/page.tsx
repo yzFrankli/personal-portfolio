@@ -1,8 +1,9 @@
-// import { BlogPosts } from 'app/components/posts'
+import textData from './components/texts.json'
 import React from 'react';
 import ProjCard from './components/ProjCard';
 import CourseCard from './components/CourseCard'
 import TechCard from './components/TechCard';
+import { text } from 'node:stream/consumers';
 
 
 export default function Page() {
@@ -10,7 +11,7 @@ export default function Page() {
   const gitImg = "/assets/github.png"
   const webImg = "/assets/website.png"
   const gameImg = "/assets/game.png"
-  const figmaImg = "/assets/figma.png"
+  const figmaImg = "/assets/figma.png"  
 
   return (
     <div>
@@ -37,38 +38,9 @@ export default function Page() {
         <section className="antialiased" id="about">
           <h2 className="section-heading">About</h2>
           <div className="flex flex-col md:flex-row gap-8 lg:gap-12 items-start">
-            <img className="w-full max-w-xs md:max-w-sm shrink-0" src={'/img/frank.jpeg'} alt="Frank Li" />
-            <p className="text-lg md:text-xl leading-relaxed text-neutral-800">
-              I build with language models the way most people build with frameworks —
-              hands-on, from prompt architecture to production. Currently looking
-              for internships where I can work on real AI problems.
-              I build with language models the way most people build with frameworks —
-              hands-on, from prompt architecture to production. Currently looking
-              for internships where I can work on real AI problems.
-              I build with language models the way most people build with frameworks —
-              hands-on, from prompt architecture to production. Currently looking
-              for internships where I can work on real AI problems.
-              I build with language models the way most people build with frameworks —
-              hands-on, from prompt architecture to production. Currently looking
-              for internships where I can work on real AI problems.
-              I build with language models the way most people build with frameworks —
-              hands-on, from prompt architecture to production. Currently looking
-              for internships where I can work on real AI problems.
-              I build with language models the way most people build with frameworks —
-              hands-on, from prompt architecture to production. Currently looking
-              for internships where I can work on real AI problems.
-              I build with language models the way most people build with frameworks —
-              hands-on, from prompt architecture to production. Currently looking
-              for internships where I can work on real AI problems.
-              I build with language models the way most people build with frameworks —
-              hands-on, from prompt architecture to production. Currently looking
-              for internships where I can work on real AI problems.
-              I build with language models the way most people build with frameworks —
-              hands-on, from prompt architecture to production. Currently looking
-              for internships where I can work on real AI problems.
-              I build with language models the way most people build with frameworks —
-              hands-on, from prompt architecture to production. Currently looking
-              for internships where I can work on real AI problems.
+            <img className="w-full max-w-xs md:max-w-sm shrink-0 float-left" src={'/img/frank.jpeg'} alt="Frank Li" />
+            <p className="text-lg md:text-2xl leading-relaxed text-neutral-800">
+              {textData.about}
             </p>
           </div>
         </section>
@@ -121,80 +93,77 @@ export default function Page() {
               imgPath={"/img/medi2.png"} 
               name={"Meditatr"} 
               tech={["Flutter", "Dart", "Swift", "Supabase", "Riverpod"]} 
-              links={[
-                "https://github.com/yzFrankli/meditatr",
-              ]} 
-              icons={{ 
-                "https://github.com/yzFrankli/meditatr" : gitImg
-                }}/>
+              links={[textData.meditatr.git]} 
+              icons={{[textData.meditatr.git] : gitImg}}
+              descr={textData.meditatr.description}
+                />
             <ProjCard 
               imgPath={"/img/taskboard.png"} 
               name={"Taskboard"} 
               tech={["React", "Vercel", "Supabase", "TailwindCSS", "Typescript"]} 
-              links={[
-                "https://github.com/yzFrankli/taskboard",
-                "https://taskboard-beryl-xi.vercel.app/"
-              ]} 
+              links={[textData.taskboard.git, textData.taskboard.link]} 
               icons={{
-                "https://github.com/yzFrankli/taskboard": gitImg,
-                "https://taskboard-beryl-xi.vercel.app/" : webImg
-              }}/>
+                [textData.taskboard.git]: gitImg, 
+                [textData.taskboard.link]: webImg
+              }}
+              descr={textData.taskboard.description}
+              />
             <ProjCard 
               imgPath={"/img/portfolio.jpeg"} 
               name={"Portfolio"} 
               tech={["React", "Vercel", "TailwindCSS", "Typescript"]} 
-              links={[
-                "https://github.com/yzFrankli/personal-portfolio",
-                "https://yzfrankli.vercel.app"
-              ]}
+              links={[textData.portfolio.git, textData.portfolio.link]}
               icons={{
-                "https://github.com/yzFrankli/personal-portfolio": gitImg,
-                "https://yzfrankli.vercel.app" : webImg
-                }}/>
+                [textData.portfolio.git]: gitImg,
+                [textData.portfolio.link]: webImg
+              }}
+                descr={textData.portfolio.description}/>
             <ProjCard 
               imgPath={"/img/spaceshooters.png"} 
               name={"Space Shooters"} 
               tech={["Unity", "C#"]} 
               links={[
-                "https://github.com/yzFrankli/taskboard", 
-                "https://spaceshootersg1.itch.io/space-shooters",
-                "https://spaceshooterwin.wixsite.com/space-shooter"
+                textData.spaceshooter.git,
+                textData.spaceshooter.link,
+                textData.spaceshooter.game
               ]}
               icons={{
-                "https://github.com/yzFrankli/taskboard": gitImg,
-                "https://spaceshootersg1.itch.io/space-shooters": gameImg,
-                "https://spaceshooterwin.wixsite.com/space-shooter" : webImg
-                }}/>
+                [textData.spaceshooter.git]: gitImg,
+                [textData.spaceshooter.game]: gameImg,
+                [textData.spaceshooter.link] : webImg
+                }}
+                descr={textData.spaceshooter.description}/>
             <ProjCard 
               imgPath={"/img/jumbocode.png"} 
               name={"Dillar academy (JumboCode)"} 
               tech={["React", "Vercel", "MongoDB", "i18next", "TailwindCSS"]} 
-              links={[
-                "https://github.com/yzFrankli/taskboard",
-                "https://www.dillaracademy.org/"
-              ]}
+              links={[textData.dillar.git, textData.dillar.link]}
               icons={{
-                "https://github.com/yzFrankli/taskboard": gitImg,
-                "https://www.dillaracademy.org/" : webImg
-                }}/>
+                [textData.dillar.git]: gitImg,
+                [textData.dillar.link] : webImg
+              }}
+                descr={textData.dillar.description}/>
             <ProjCard 
               imgPath={"/img/encryptedim.png"} 
               name={"End-to-end encrypted instant messaging"} 
               tech={["Python"]} 
-              links={["https://github.com/yzFrankli/taskboard"]}
-              icons={{"https://github.com/yzFrankli/taskboard": gitImg}}/>
+              links={[textData.endtoendim.git]}
+              icons={{[textData.endtoendim.git]: gitImg}}
+              descr={textData.endtoendim.description}/>
             <ProjCard 
               imgPath={"/img/spusic.png"} 
               name={"Spusic web game"} 
               tech={["HTML", "CSS", "Java Script"]} 
-              links={["https://github.com/yzFrankli/my-Spusic"]}
-              icons={{"https://github.com/yzFrankli/my-Spusic": gitImg}}/>
+              links={[textData.spusic.git]}
+              icons={{[textData.spusic.git] : gitImg}}
+              descr={textData.spusic.description}/>
             <ProjCard 
               imgPath={"/img/producthon.png"} 
               name={"Producthon"} 
               tech={["Figma"]} 
-              links={["https://www.figma.com/proto/TBHHhR0F6687q6bG904JFP/Disability-Map?node-id=68-396&t=ZpVM9us4dsBgKI0r-1&starting-point-node-id=68%3A396"]}
-              icons={{"https://www.figma.com/proto/TBHHhR0F6687q6bG904JFP/Disability-Map?node-id=68-396&t=ZpVM9us4dsBgKI0r-1&starting-point-node-id=68%3A396": figmaImg}}/>
+              links={[textData.producthon.figma]}
+              icons={{[textData.producthon.figma]: figmaImg}}
+              descr={textData.producthon.description}/>
           </div>
         </section>
         
