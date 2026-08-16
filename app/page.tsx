@@ -25,7 +25,7 @@ export default function Page() {
           <a className="border border-black rounded-xl px-4 py-2 mt-8 md:mt-12" href={"#about"}>↓ Explore more</a>
         </div>
 
-        <div className="absolute bottom-8 left-6 md:bottom-10 md:left-10 w-24 h-px bg-black" />
+        {/* <div className="absolute bottom-8 left-6 md:bottom-10 md:left-10 w-24 h-px bg-black" /> */}
 
         <div className="absolute top-8 right-6 md:top-10 md:right-10 text-sm tracking-wide">
           PERSONAL PORTFOLIO
@@ -98,15 +98,18 @@ export default function Page() {
         <section id="coursework">
           <h2 className="section-heading">Course work</h2>
           <div className="flex flex-row flex-wrap gap-3">
-            <CourseCard courseName={"programming language and algorithms"} />
-            <CourseCard courseName={"game design"} />
-            <CourseCard courseName={"data structure and analysis"} />
-            <CourseCard courseName={"data structure and analysis"} />
-            <CourseCard courseName={"data structure and analysis"} />
-            <CourseCard courseName={"data structure and analysis"} />
-            <CourseCard courseName={"data structure and analysis"} />
-            <CourseCard courseName={"data structure and analysis"} />
-            <CourseCard courseName={"data structure and analysis"} />
+            <CourseCard courseName={"Programming languages"} />
+            <CourseCard courseName={"Algorithms"} />
+            <CourseCard courseName={"Network security"} />
+            <CourseCard courseName={"Machine structure and programming"} />
+            <CourseCard courseName={"Software engineering"} />
+            <CourseCard courseName={"Data structuers"} />
+            <CourseCard courseName={"Web programming"} />
+            <CourseCard courseName={"Game design"} />
+            <CourseCard courseName={"Computation theory"} />
+            <CourseCard courseName={"Visualization"} />
+            <CourseCard courseName={"Intro to security"} />
+            <CourseCard courseName={"Foundation for AI"} />
           </div>
         </section>
 
@@ -141,11 +144,11 @@ export default function Page() {
               name={"Portfolio"} 
               tech={["React", "Vercel", "TailwindCSS", "Typescript"]} 
               links={[
-                "https://github.com/yzFrankli/taskboard",
+                "https://github.com/yzFrankli/personal-portfolio",
                 "https://yzfrankli.vercel.app"
               ]}
               icons={{
-                "https://github.com/yzFrankli/taskboard": gitImg,
+                "https://github.com/yzFrankli/personal-portfolio": gitImg,
                 "https://yzfrankli.vercel.app" : webImg
                 }}/>
             <ProjCard 
@@ -184,8 +187,8 @@ export default function Page() {
               imgPath={"/img/spusic.png"} 
               name={"Spusic web game"} 
               tech={["HTML", "CSS", "Java Script"]} 
-              links={["https://github.com/yzFrankli/cs20finalproject/blob/main/spusic.html"]}
-              icons={{"https://github.com/yzFrankli/cs20finalproject/blob/main/spusic.html": gitImg}}/>
+              links={["https://github.com/yzFrankli/my-Spusic"]}
+              icons={{"https://github.com/yzFrankli/my-Spusic": gitImg}}/>
             <ProjCard 
               imgPath={"/img/producthon.png"} 
               name={"Producthon"} 
