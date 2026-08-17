@@ -18,7 +18,7 @@ export default function Page() {
     description: string
   }
 
-  const projs: Projs[] = proj;
+  const projects: Projs[] = proj;
 
   const gitImg = "/assets/github.png"
   const webImg = "/assets/website.png"
@@ -102,7 +102,7 @@ export default function Page() {
         <section id="portfolio">
           <h2 className="section-heading">Portfolio</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-x-5 gap-y-12 justify-items-center xl:justify-items-start">
-            {projs.map((projs) => (
+            {projects.map((projs) => (
               <ProjCard
                 key={projs.name}
                 imgPath={projs.img} 

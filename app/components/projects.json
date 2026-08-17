@@ -4,7 +4,7 @@
     "img": "/img/medi2.png",
     "tech": ["Flutter", "Dart", "Swift", "Supabase", "Riverpod"],
     "icons": {
-      "https://github.com/yzFrankli/meditatr" : "/assets/github.png"
+      "https://github.com/yzFrankli/meditatr": "/assets/github.png"
     },
     "description": "some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in"
   },
@@ -14,9 +14,9 @@
     "img": "/img/taskboard.png",
     "tech": ["React", "Vercel", "Supabase", "TailwindCSS", "Typescript"],
     "icons":{
-      "https://github.com/yzFrankli/taskboard" : "/assets/github.png"
+      "https://github.com/yzFrankli/taskboard" : "/assets/github.png",
+      "https://taskboard-beryl-xi.vercel.app/" : "/assets/website.png"
     },
-    "link": "https://taskboard-beryl-xi.vercel.app/",
     "description":"some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in"
   },
 
@@ -25,9 +25,9 @@
     "img": "/img/portfolio.jpeg",
     "tech": ["React", "Vercel", "TailwindCSS", "Typescript"],
     "icons": {
-      "https://github.com/yzFrankli/personal-portfolio" : "/assets/github.png"
+      "https://github.com/yzFrankli/personal-portfolio" : "/assets/github.png",
+      "https://yzfrankli.vercel.app" : "/assets/website.png"
     },
-    "link":"https://yzfrankli.vercel.app",
     "description":"some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in"
   },
 
@@ -36,10 +36,10 @@
     "img": "/img/spaceshooters.png",
     "tech": ["Unity", "C#"],
     "icons":{
-      "https://github.com/yzFrankli/taskboard" : "/assets/github.png"
-    },
-    "game": "https://spaceshootersg1.itch.io/space-shooters",
-    "link": "https://spaceshooterwin.wixsite.com/space-shooter",
+      "https://github.com/yzFrankli/taskboard" : "/assets/github.png",
+      "https://spaceshootersg1.itch.io/space-shooters" : "/assets/game.png",
+      "https://spaceshooterwin.wixsite.com/space-shooter" : "/assets/website.png"
+    },    
     "description":"some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in some description Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in"
   },
   
