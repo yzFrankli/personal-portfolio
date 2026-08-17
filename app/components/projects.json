@@ -48,7 +48,7 @@
     "img": "/img/jumbocode.png",
     "tech": ["React", "Vercel", "MongoDB", "i18next", "TailwindCSS"],
     "icons": {
-      "/img/jumbocode.png" : "/assets/github.png",
+      "https://github.com/yzFrankli/onboarding-ticket" : "/assets/github.png",
       "https://www.dillaracademy.org/" : "/assets/website.png"
     },
     
