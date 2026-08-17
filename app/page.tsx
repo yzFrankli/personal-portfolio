@@ -1,17 +1,30 @@
-import textData from './components/texts.json'
+import proj from './components/projects.json'
+import abt from './components/texts.json'
 import React from 'react';
 import ProjCard from './components/ProjCard';
 import CourseCard from './components/CourseCard'
 import TechCard from './components/TechCard';
 import { text } from 'node:stream/consumers';
+import { UUID } from 'node:crypto';
 
 
 export default function Page() {
+
+  interface Projs {
+    name: string,
+    img: string,
+    tech: Array<string>,
+    icons: Record<string, string>,
+    description: string
+  }
+
+  const projs: Projs[] = proj;
 
   const gitImg = "/assets/github.png"
   const webImg = "/assets/website.png"
   const gameImg = "/assets/game.png"
   const figmaImg = "/assets/figma.png"  
+
 
   return (
     <div>
@@ -40,7 +53,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row gap-8 lg:gap-12 items-start">
             <img className="w-full max-w-xs md:max-w-sm shrink-0 float-left" src={'/img/frank.jpeg'} alt="Frank Li" />
             <p className="text-lg md:text-2xl leading-relaxed text-neutral-800">
-              {textData.about}
+              {abt.about}
             </p>
           </div>
         </section>
@@ -89,81 +102,16 @@ export default function Page() {
         <section id="portfolio">
           <h2 className="section-heading">Portfolio</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-x-5 gap-y-12 justify-items-center xl:justify-items-start">
-            <ProjCard 
-              imgPath={"/img/medi2.png"} 
-              name={"Meditatr"} 
-              tech={["Flutter", "Dart", "Swift", "Supabase", "Riverpod"]} 
-              links={[textData.meditatr.git]} 
-              icons={{[textData.meditatr.git] : gitImg}}
-              descr={textData.meditatr.description}
-                />
-            <ProjCard 
-              imgPath={"/img/taskboard.png"} 
-              name={"Taskboard"} 
-              tech={["React", "Vercel", "Supabase", "TailwindCSS", "Typescript"]} 
-              links={[textData.taskboard.git, textData.taskboard.link]} 
-              icons={{
-                [textData.taskboard.git]: gitImg, 
-                [textData.taskboard.link]: webImg
-              }}
-              descr={textData.taskboard.description}
+            {projs.map((projs) => (
+              <ProjCard
+                key={projs.name}
+                imgPath={projs.img} 
+                name={projs.name} 
+                tech={projs.tech} 
+                icons={projs.icons}
+                descr={projs.description}
               />
-            <ProjCard 
-              imgPath={"/img/portfolio.jpeg"} 
-              name={"Portfolio"} 
-              tech={["React", "Vercel", "TailwindCSS", "Typescript"]} 
-              links={[textData.portfolio.git, textData.portfolio.link]}
-              icons={{
-                [textData.portfolio.git]: gitImg,
-                [textData.portfolio.link]: webImg
-              }}
-                descr={textData.portfolio.description}/>
-            <ProjCard 
-              imgPath={"/img/spaceshooters.png"} 
-              name={"Space Shooters"} 
-              tech={["Unity", "C#"]} 
-              links={[
-                textData.spaceshooter.git,
-                textData.spaceshooter.link,
-                textData.spaceshooter.game
-              ]}
-              icons={{
-                [textData.spaceshooter.git]: gitImg,
-                [textData.spaceshooter.game]: gameImg,
-                [textData.spaceshooter.link] : webImg
-                }}
-                descr={textData.spaceshooter.description}/>
-            <ProjCard 
-              imgPath={"/img/jumbocode.png"} 
-              name={"Dillar academy (JumboCode)"} 
-              tech={["React", "Vercel", "MongoDB", "i18next", "TailwindCSS"]} 
-              links={[textData.dillar.git, textData.dillar.link]}
-              icons={{
-                [textData.dillar.git]: gitImg,
-                [textData.dillar.link] : webImg
-              }}
-                descr={textData.dillar.description}/>
-            <ProjCard 
-              imgPath={"/img/encryptedim.png"} 
-              name={"End-to-end encrypted instant messaging"} 
-              tech={["Python"]} 
-              links={[textData.endtoendim.git]}
-              icons={{[textData.endtoendim.git]: gitImg}}
-              descr={textData.endtoendim.description}/>
-            <ProjCard 
-              imgPath={"/img/spusic.png"} 
-              name={"Spusic web game"} 
-              tech={["HTML", "CSS", "Java Script"]} 
-              links={[textData.spusic.git]}
-              icons={{[textData.spusic.git] : gitImg}}
-              descr={textData.spusic.description}/>
-            <ProjCard 
-              imgPath={"/img/producthon.png"} 
-              name={"Producthon"} 
-              tech={["Figma"]} 
-              links={[textData.producthon.figma]}
-              icons={{[textData.producthon.figma]: figmaImg}}
-              descr={textData.producthon.description}/>
+            ))}
           </div>
         </section>
         

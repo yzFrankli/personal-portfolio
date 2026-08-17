@@ -1,16 +1,18 @@
+import objectProxy from 'next/dist/build/jest/object-proxy';
 import CourseCard from './CourseCard'
+import { link } from 'fs';
 
 interface projItems { 
   imgPath: string;
   name: string;
   tech: Array<string>;
-  links: Array<string>
-  icons: Record<string, string> // Record<link, icon-link>
+  // links: Array<string>
+  icons: Record<string, string> // Dictionary<link, icon-link>: [{link, icon-link}, {link, icon-link}]
   descr: string;
 
 }
 
-export default function ProjCard({ imgPath, name, tech, links, icons, descr }: projItems) {
+export default function ProjCard({ imgPath, name, tech, icons, descr }: projItems) {
   return (
 
     <div className="project h-auto rounded-xl flex flex-col">
@@ -27,20 +29,21 @@ export default function ProjCard({ imgPath, name, tech, links, icons, descr }: p
 
           <div className="back bg-gray-500 relative justify-center">
             <div className="project-icons absolute">
-              {Object.entries(links).map(([key, value], index) => (
-                <a
-                key={index}
-                href={value}
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                <img
-                  src={icons[value]}
-                  className="icon"
-                  alt="GitHub"
-                />
-                </a>
-              ))}
+              {Object.entries(icons).map(([link, icon], index) => [
+                  <a
+                    key={index}
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    <img
+                      src={icons[link]}
+                      className="icon"
+                    />
+                  </a>
+                ])
+                }
+              
 
               {/* <a
                 href="https://your-project.com"
