@@ -1,4 +1,4 @@
-import proj from './components/projects.json'
+import projects from './components/projects'
 import abt from './components/texts.json'
 import React from 'react';
 import ProjCard from './components/ProjCard';
@@ -7,18 +7,18 @@ import TechCard from './components/TechCard';
 import { text } from 'node:stream/consumers';
 import { UUID } from 'node:crypto';
 
+export interface Projs {
+  name: string,
+  img: string,
+  tech: Array<string>,
+  icons: Record<string, string>,
+  description: string
+}
 
 export default function Page() {
 
-  interface Projs {
-    name: string,
-    img: string,
-    tech: Array<string>,
-    icons: Record<string, string>,
-    description: string
-  }
-
-  const projects: Projs[] = proj;
+  // const projs = projects satisfies Projs[];
+  const projs = projects as Projs[];
 
   const gitImg = "/assets/github.png"
   const webImg = "/assets/website.png"
@@ -102,7 +102,7 @@ export default function Page() {
         <section id="portfolio">
           <h2 className="section-heading">Portfolio</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-x-5 gap-y-12 justify-items-center xl:justify-items-start">
-            {projects.map((projs) => (
+            {projs.map((projs) => (
               <ProjCard
                 key={projs.name}
                 imgPath={projs.img} 

@@ -6,7 +6,6 @@ interface projItems {
   imgPath: string;
   name: string;
   tech: Array<string>;
-  // links: Array<string>
   icons: Record<string, string> // Dictionary<link, icon-link>: [{link, icon-link}, {link, icon-link}]
   descr: string;
 
@@ -42,7 +41,7 @@ export default function ProjCard({ imgPath, name, tech, icons, descr }: projItem
                     />
                   </a>
                 ])
-                }
+              }
               
 
               {/* <a
