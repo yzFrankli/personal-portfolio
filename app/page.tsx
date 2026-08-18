@@ -36,7 +36,7 @@ export default function Page() {
           <br />
           Li
           </h1>
-          <a className="border border-black rounded-xl px-4 py-2 mt-8 md:mt-12" href={"#about"}>↓ Explore more</a>
+          <a className="border border-black rounded-xl px-4 py-2 mt-8 md:mt-12 transition-all duration-300 hover:scale-110" href={"#about"}>↓ Explore more</a>
         </div>
 
         {/* <div className="absolute bottom-8 left-6 md:bottom-10 md:left-10 w-24 h-px bg-black" /> */}
@@ -51,7 +51,7 @@ export default function Page() {
         <section className="antialiased" id="about">
           <h2 className="section-heading">About</h2>
           <div className="flex flex-col md:flex-row gap-8 lg:gap-12 items-start">
-            <p className="text-lg md:text-2xl leading-relaxed text-neutral-800">
+            <p className="text-lg dark:text-white md:text-2xl leading-relaxed text-neutral-800">
               {abt.about}
             </p>
             <img className="w-full max-w-xs md:max-w-sm shrink-0 float-left rounded-xl" src={'/img/abt.jpg'} alt="Frank Li" />
