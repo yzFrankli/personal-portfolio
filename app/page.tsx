@@ -51,10 +51,10 @@ export default function Page() {
         <section className="antialiased" id="about">
           <h2 className="section-heading">About</h2>
           <div className="flex flex-col md:flex-row gap-8 lg:gap-12 items-start">
-            <img className="w-full max-w-xs md:max-w-sm shrink-0 float-left" src={'/img/frank.jpeg'} alt="Frank Li" />
             <p className="text-lg md:text-2xl leading-relaxed text-neutral-800">
               {abt.about}
             </p>
+            <img className="w-full max-w-xs md:max-w-sm shrink-0 float-left rounded-xl" src={'/img/abt.jpg'} alt="Frank Li" />
           </div>
         </section>
 
