@@ -37,7 +37,7 @@ const projects: Projs[] = [
     "img": "/img/spaceshooters.png",
     "tech": ["Unity", "C#"],
     "icons": {
-      "https://github.com/yzFrankli/taskboard" : "/assets/github.png",
+      "https://github.com/harrisonsch/SpaceShoot" : "/assets/github.png",
       "https://spaceshootersg1.itch.io/space-shooters" : "/assets/game.png",
       "https://spaceshooterwin.wixsite.com/space-shooter" : "/assets/website.png"
     },    
