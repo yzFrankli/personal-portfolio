@@ -60,7 +60,7 @@ export default function Page() {
 
         {/* techstack */}
         <section id="tech">
-          <h2 className="section-heading">Tech</h2>
+          <h2 className="section-heading">My Tech stack</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-2 gap-y-6 md:gap-x-4 md:gap-y-8">
             <TechCard imgPath={"/assets/java.png"} name={"Java"} />
             <TechCard imgPath={"/assets/c.png"} name={"C"} />
